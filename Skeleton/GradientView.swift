@@ -11,10 +11,16 @@ import Cocoa
 /// A view who's `layerClass` is a `CAGradientLayer`.
 class GradientView: NSView {
     
-    override func makeBackingLayer() -> CALayer {
-        return CAGradientLayer()
-    }
     
+    override var layer: CALayer? {
+        get {
+            let gl = CAGradientLayer()
+            gl.frame = bounds
+            
+            return gl
+        }
+        set {}
+    }
 }
 
 extension GradientView {
