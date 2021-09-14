@@ -11,6 +11,13 @@ import Cocoa
 /// A view who's `layerClass` is a `CAGradientLayer`.
 class GradientView: NSView {
     
+    override var wantsLayer: Bool {
+        get {
+            return true
+        }
+        set {}
+    }
+    
     override func makeBackingLayer() -> CALayer {
         let layer = CAGradientLayer()
         layer.needsDisplayOnBoundsChange = true
