@@ -6,13 +6,13 @@
 //  Copyright © 2017 Gonzalo Nunez. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 
 extension CABasicAnimation {
   /// A convenient way to apply a `GradientTransition` to a `CABasicAnimation`.
   func apply(gradientTransition: GradientTransition) {
-    fromValue = NSValue(cgPoint: gradientTransition.from.cgPoint)
-    toValue = NSValue(cgPoint: gradientTransition.to.cgPoint)
+    fromValue = NSValue(point: gradientTransition.from.cgPoint)
+    toValue = NSValue(point: gradientTransition.to.cgPoint)
   }
 }
 

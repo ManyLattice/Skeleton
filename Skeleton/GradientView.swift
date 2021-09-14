@@ -6,13 +6,16 @@
 //  Copyright © 2017 Gonzalo Nunez. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 
 /// A view who's `layerClass` is a `CAGradientLayer`.
-class GradientView: UIView {
-  override open class var layerClass: AnyClass {
-    return CAGradientLayer.self
-  }
+class GradientView: NSView {
+    override var layer: CALayer? {
+        get {
+            return CAGradientLayer()
+        }
+        set {}
+    }
 }
 
 extension GradientView {

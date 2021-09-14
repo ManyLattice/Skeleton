@@ -6,11 +6,11 @@
 //
 //
 
-import UIKit
+import Cocoa
 
 /// A view that contains a `GradientView`. Useful for sliding a `CAGradientLayer` without
 /// affecting the bottom-most `CALayer`.
-public class GradientContainerView: UIView {
+public class GradientContainerView: NSView {
   private let gradientView = GradientView(frame: .zero)
   
   /// :nodoc:
@@ -25,7 +25,7 @@ public class GradientContainerView: UIView {
     setUpGradientView()
   }
   
-  /// Sets up the `GradientView` with constraints that that cause it to fill the `UIView` entirely.
+  /// Sets up the `GradientView` with constraints that that cause it to fill the `NSView` entirely.
   private func setUpGradientView() {
     gradientView.translatesAutoresizingMaskIntoConstraints = false
     addSubview(gradientView)

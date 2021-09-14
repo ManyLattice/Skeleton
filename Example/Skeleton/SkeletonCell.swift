@@ -10,7 +10,7 @@ import UIKit
 import Skeleton
 
 class SkeletonCell: UITableViewCell {
-  @IBOutlet weak var imagePlaceholderView: UIView!
+  @IBOutlet weak var imagePlaceholderView: NSView!
   @IBOutlet weak var titlePlaceholderView: GradientContainerView!
   @IBOutlet weak var subtitlePlaceholderView: GradientContainerView!
 

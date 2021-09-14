@@ -6,7 +6,7 @@
 //
 //
 
-import UIKit
+import Cocoa
 
 /// A protocol that allows grouping `CAGradientLayer`s together. Useful to have built-in sliding
 /// behavior for all `CAGradientLayer`s in `gradientLayers`.
