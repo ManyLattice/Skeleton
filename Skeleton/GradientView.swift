@@ -18,10 +18,13 @@ class GradientView: NSView {
         set {}
     }
     
-    override func makeBackingLayer() -> CALayer {
-        let layer = CAGradientLayer()
-        layer.needsDisplayOnBoundsChange = true
-        return layer
+    override var layer: CALayer? {
+        get {
+            let layer = CAGradientLayer()
+            layer.needsDisplayOnBoundsChange = true
+            return layer
+        }
+        set {}
     }
     
 }
