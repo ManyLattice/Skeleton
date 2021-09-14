@@ -12,7 +12,7 @@ import Cocoa
 class GradientView: NSView {
     override var layer: CALayer? {
         get {
-            return CAGradientLayer(layer: super.layer!)
+            return CAGradientLayer()
         }
         set {}
     }
