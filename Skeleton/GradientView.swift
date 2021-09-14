@@ -15,7 +15,7 @@ class GradientView: NSView {
     override var layer: CALayer? {
         get {
             let gl = CAGradientLayer()
-            gl.frame = bounds
+            gl.frame = .init(origin: .zero, size: .init(width: 100, height: 100))
             
             return gl
         }
